@@ -1,0 +1,119 @@
+#alarmWindow {
+	display: none;
+	width: 800px;
+	position: fixed;
+	background-color: black;
+	z-index: 10;
+	border: 1px solid orange;
+	border-radius: 10px;
+	animation: scaleAlarmWindow 0.5s linear;
+	text-align: center;
+}
+
+@keyframes scaleAlarmWindow {
+	0%{transform: scale(0);}
+	100%{transform: scale(1.0);}
+}
+
+#alarmWindow p {
+	font-size: 1.25em;
+	padding: 5px;
+	margin: 0px;
+}
+
+.closeWindowAlarm {
+	position: absolute;
+	display: block;
+	padding: 0px;
+	right: -8px;
+	top: -8px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	border-radius: 32px;
+	background-color: orange;
+	border: 1px solid orange;
+	background-image: url(../img/cancel.png);
+	}
+
+	#alarmHeader {
+		width: 100%;
+		background-color: red;
+		color: white;
+		font-size: 3em;
+		text-align: center;
+		border-radius: 10px 10px 0px 0px;
+		border-bottom: 10px solid white;
+	}
+
+	.alarmHeader{
+		background-color: red;
+		color: white;
+		font-size: 2em;
+		text-align: center;
+		border-bottom: 3px solid white;
+		margin: 0px;
+	}
+
+	#startPandemic, #endPandemic {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+		.mapElement {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			margin: 5px;
+			cursor: pointer;
+		}
+
+		.mapElement:hover {
+			transform: scale(1.1);
+		}
+
+		.map {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;		
+		}
+
+		#div0 {
+			background-color: #a6f0af;
+		}
+
+		#div1 {
+			background-color: red;
+			animation: alarmRed 1s infinite;
+		}
+
+		#divX {
+			background-color: #3fc0ff;
+		}
+
+		.end {
+			display: none;
+		}
+
+		@keyframes alarmRed {
+			0% {box-shadow: 0px 0px 7px 3px #FF0000;}
+			100%{box-shadow: none;}
+		}
+
+	#choice {
+		width: 300px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+.blocks {
+	border: 1px solid white;
+	margin: 10px;
+	text-align: center;
+}
